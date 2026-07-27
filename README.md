@@ -1,7 +1,7 @@
 # Automation Toolkit
 
 Example automations from my freelance work: clean, documented, production-minded Python.
-I'm a certified automation engineer (IHK) and electrical engineering student — I build
+I'm a certified automation engineer (IHK) and electrical engineering student. I build
 custom scrapers, data pipelines, and workflow automations for small businesses.
 
 **Hire me:** Python scripts · web scraping · Excel/report automation · AI chatbots · n8n/Make workflows.
