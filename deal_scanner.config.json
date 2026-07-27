@@ -1,0 +1,11 @@
+{
+  "base_url": "https://www.kleinanzeigen.de",
+  "delay_seconds": 6,
+  "detail_fetch_cap": 30,
+  "searches": [
+    { "label": "Nintendo Switch defekt", "path": "/s-preis::60/nintendo-switch-defekt/k0", "max_price": 50 },
+    { "label": "Kaffeevollautomat defekt", "path": "/s-preis::50/kaffeevollautomat-defekt/k0", "max_price": 45 }
+  ],
+  "red_flags": "bereits (getauscht|repariert|geöffnet|versucht)|riss|gebrochen|wasserschaden|platine|paypal (freunde|familie)",
+  "green_flags": "verliert wasser|undicht|dichtung|o-ring|drift|akku (defekt|schwach)|lädt nicht|funktioniert (grundsätzlich|teilweise)"
+}

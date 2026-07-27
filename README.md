@@ -13,6 +13,7 @@ English & Deutsch.
 |---|---|
 | [`scraper_template.py`](scraper_template.py) | Polite, robots.txt-respecting web scraper → CSV. Retry logic, rate limiting, clean structure. |
 | [`excel_report.py`](excel_report.py) | Turns raw spreadsheet exports into a formatted summary report (totals, group stats) — the classic "3 hours of Excel every Monday" killer. |
+| [`deal_scanner.py`](deal_scanner.py) | **Real-world example:** config-driven marketplace monitor. Watches classified-ad searches, filters by price caps, deduplicates reposts, reads full descriptions, and auto-grades each listing GOOD/check/AVOID via keyword analysis ("already repaired" = red flag, "battery worn" = easy fix). Outputs a ranked Markdown report. I use this daily for my own refurbishing business. |
 
 ## Principles I work by
 
