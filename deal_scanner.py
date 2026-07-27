@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Marketplace deal scanner — config-driven search monitoring with text analysis.
+"""Marketplace deal scanner: config-driven search monitoring with text analysis.
 
 Monitors classified-ad searches, filters by price caps, deduplicates reposts,
 fetches full descriptions, and grades each hit with configurable red/green
@@ -111,7 +111,7 @@ def main() -> int:
     order = {"GOOD": 0, "check": 1, "AVOID": 2}
     hits.sort(key=lambda r: (order.get(r.get("verdict", "check"), 1), r["price"]))
     lines = [
-        f"# Deal report {datetime.now():%Y-%m-%d %H:%M} — {len(hits)} hits",
+        f"# Deal report {datetime.now():%Y-%m-%d %H:%M}: {len(hits)} hits",
         "",
         "| Verdict | Search | Title | Price € | Ort | Description | Link |",
         "|---|---|---|---|---|---|---|",

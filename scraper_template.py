@@ -35,7 +35,7 @@ def is_allowed(url: str) -> bool:
         parser.set_url(robots_url)
         parser.read()
     except OSError:
-        log.warning("Could not read %s — treating as disallowed", robots_url)
+        log.warning("Could not read %s, treating as disallowed", robots_url)
         return False
     return parser.can_fetch(USER_AGENT, url)
 
@@ -80,7 +80,7 @@ def main() -> int:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
     if not is_allowed(args.url):
-        log.error("robots.txt disallows scraping %s — aborting", args.url)
+        log.error("robots.txt disallows scraping %s, aborting", args.url)
         return 1
 
     session = requests.Session()
